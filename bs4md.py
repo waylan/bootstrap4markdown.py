@@ -187,11 +187,13 @@ class BsCarouselSlideBlock(Block):
         return block
 
     def on_end(self, block):
-        ''' Remove the caption wrapper if it is empty. '''
+        ''' Do some cleanup. '''
         if self.caption is not None and len(self.caption) == 0 and not self.caption.text:
+            # Remove the caption wrapper if it is empty.
             block.remove(self.caption)
-        # if self.options['markdown'] == 'raw':
-        #     # TODO: handle this case. Waiting for API to be finalized.
+        if self.options['markdown'] == 'raw' and block.text:
+            # Stash raw content and replace with a placeholder.
+            block.text = self.md.htmlStash.store(block.text)
 
 
 class BsBlockExtension(BlocksExtension):
@@ -285,8 +287,7 @@ if __name__ == '__main__':
     /// slide
         markdown: raw
 
-    <h4>Title</h4>
-
+        <h4>Title</h4>
     ///
     ////
     ''')
