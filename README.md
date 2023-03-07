@@ -1,4 +1,4 @@
-# Bootstrap4Markdow
+# Bootstrap4Markdown
 
 A Python-Markdown extension which provides a simple syntax for including
 [Bootstrap] objects within a Markdown document.
@@ -170,7 +170,7 @@ entire slideshow.
 
 Option        | Type     | Description                    | Default
 ------------- | ---------| ------------------------------ | -------
-`controls`    | boolean  | Display previous/next buttons. | `true`.
+`controls`    | boolean  | Display previous/next buttons. | `true`
 `indicators`  | boolean  | Display indicators to jump to a specific slide. | `false`
 `fade`        | boolean  | Enable a crossfade transition between slides. | `false`
 `autoplay`    | boolean or string | Enable autoplay. Set to `carousel` to autoplay on page load or `true` to autoplay after first interaction. | `false`
@@ -267,9 +267,9 @@ Option        | Type     | Description                    | Default
 `markdown`    | string | Indicate whether body or caption content should be parsed as `block`,  `inline`, or `raw` content. | `block`.
 `attrs`       | key:value pairs | Define custom HTML attributes for the slide element. | `{}`
 
-Note that if more that one slide is set `active: true`, then only the first of
-all "active" slides is actually set to active. If no slides are explicitly set
-to be active, then the first slide in the carousel is set to be active by
+Note that if more that one slide is set to  `active: true`, then only the first
+of all "active" slides is actually set to active. If no slides are explicitly
+set to be active, then the first slide in the carousel is set to be active by
 default.
 
 ## License
