@@ -279,7 +279,7 @@ The Bootstrap4Markdown Extension to Python-Markdown is licensed under the
 
 ## Change Log
 
-### Version 0.1 (under development)
+### Version 0.1 (2023-03-07)
 
 The initial release. Includes support for Alerts and Carousels.
 

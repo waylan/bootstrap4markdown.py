@@ -1,7 +1,7 @@
 [project]
 name = "bootstrap4markdown"
 description = "A Python-Markdown extension which provides a simple syntax for including Bootstrap objects within a Markdown document."
-version = "0.0.1"
+version = "0.1"
 dependencies = [
     'pymdown-extensions>=9.10',
 ]
